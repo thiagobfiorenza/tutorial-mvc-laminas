@@ -6,6 +6,13 @@ use Laminas\Mvc\Application;
 use Laminas\Stdlib\ArrayUtils;
 
 /**
+ * Display all errors when APPLICATION_ENV is development.
+ */
+error_reporting(E_ALL|E_STRICT);
+ini_set('display_errors', 'on');
+
+
+/**
  * This makes our life easier when dealing with paths. Everything is relative
  * to the application root now.
  */
